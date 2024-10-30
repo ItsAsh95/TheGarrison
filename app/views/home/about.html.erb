@@ -1,0 +1,53 @@
+<!-- app/views/about/index.html.erb -->
+<main class="main-content">
+  <div class="carousel-container">
+    <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+      <!-- Carousel indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Mission"></button>
+        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Vision"></button>
+        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Team"></button>
+      </div>
+
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <!-- Mission Slide -->
+        <div class="carousel-item active">
+          <%= image_tag("Mission.jpg", class: "d-block w-100", alt: "Mission") %>
+            <div class="carousel-caption about-caption">
+            <h2>Our Mission</h2>
+            <p>At The Garrison, we are committed to excellence in [your mission statement here].</p>
+          </div>
+        </div>
+
+        <!-- Vision Slide -->
+        <div class="carousel-item">
+          <%= image_tag("Vision.jpg", class: "d-block w-100", alt: "Vision") %>
+          <div class="carousel-caption about-caption">
+            <h2>Our Vision</h2>
+            <p>We envision a future where [your vision statement here].</p>
+          </div>
+        </div>
+
+        <!-- Team Slide -->
+        <div class="carousel-item">
+          <%= image_tag("Names.jpg", class: "d-block w-100", alt: "Team") %>
+          <div class="carousel-caption about-caption">
+            <h2>Our Team</h2>
+            <p>Meet the dedicated professionals behind The Garrison.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</main>

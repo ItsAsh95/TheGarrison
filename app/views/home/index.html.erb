@@ -1,0 +1,47 @@
+<main class="main-content">
+  <div class="carousel-container">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+      <!-- Carousel indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag("Slide1.jpg", class: "d-block w-100", alt: "Slide 1") %>
+          <div class="carousel-caption">
+            <h2>The Garrison</h2>
+            <p>This Slide will contain a brief Description of our venture.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+         <%= image_tag("Slide2.jpg", class: "d-block w-100", alt: "Slide 2") %>
+          <div class="carousel-caption">
+            <h2>Public Safety</h2>
+            <p>This Slide will explain how we will work to improve public safety.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag("Slide3.jpg", class: "d-block w-100", alt: "Slide 3") %>
+          <div class="carousel-caption">
+            <h2>Military Aspect</h2>
+            <p>How we plan to expand into the defense sector</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</main>
