@@ -14,157 +14,35 @@
  *= require_self
  */
 
-/* Add this to your CSS */
+ /* Add this to your CSS */
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scroll */
-  }
-  
-  .container-fluid {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden; /* Prevents horizontal scroll */
+ }
+ 
+ .container-fluid {
+   padding: 0;
+   margin: 0;
+   width: 100%;
+ }
 
 .navbar {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
+   padding: 0;
+   margin: 0;
+   width: 100%;
+ }
 
 .button-gap {
-    margin-left: 870px; /* Adjust the value as needed */
+   margin-left: 870px; /* Adjust the value as needed */
 }
 
 
-/* Reset default margins and padding */
-body, main {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Main content area styles */
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    width: 100%;
-  }
-  
-  /* Carousel container styles */
-  .carousel-container {
-    flex: 1;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Carousel styles */
-  .carousel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-  
-  .carousel-inner {
-    height: 100%;
-  }
-  
-  .carousel-item {
-    height: 100%;
-  }
-  
-  .carousel-item img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-  }
-  
-  /* Caption styles */
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 80%;
-  }
-  
-  .carousel-caption h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .carousel-caption p {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-  }
-  
-  /* Ensure carousel controls are visible */
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 5%;
-    opacity: 0.8;
-  }
-  
-  .carousel-indicators {
-    margin-bottom: 1rem;
-  }
 
-  .header-logo {
-    height: 40px; /* Adjust based on your needs */
-    width: auto;
-    padding: 5px;
-  }
+
+  
 
 
 
-/* Enhanced caption styling for About Us page */
-.about-caption {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 60%;
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    text-align: center;
-  }
-  
-  .about-caption h2 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .about-caption p {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: #ffffff;
-    margin-bottom: 0;
-  }
-  
-  /* Custom transition for about page carousel */
-  .carousel-item {
-    transition: transform 1.2s ease-in-out;
-  }
-  
-  /* Optional: Add a gradient overlay to images */
-  .carousel-item::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3));
-  }
-  
- 
+
+

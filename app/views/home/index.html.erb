@@ -1,3 +1,85 @@
+<style>
+/* Reset default margins and padding */
+body, main {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main content area styles */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Carousel container styles */
+.carousel-container {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Carousel item styles */
+.carousel-item {
+  height: 100vh; /* Makes each carousel item take full viewport height */
+  position: relative;
+}
+
+/* Carousel image styles */
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Centered caption styles */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+  color: white;
+  overflow: hidden; /* Ensure text does not overflow */
+}
+
+/* Adjust heading and paragraph sizes within captions */
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* Ensure text does not overflow */
+.carousel-caption p {
+  overflow-wrap: break-word; /* Break long words */
+  word-wrap: break-word; /* Fallback for older browsers */
+  white-space: normal; /* Allow text to wrap normally */
+}
+
+/* Carousel control styles */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+}
+
+.carousel-indicators {
+  margin-bottom: 1rem;
+}
+</style>
+
+
 <main class="main-content">
   <div class="carousel-container">
     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
@@ -14,21 +96,24 @@
           <%= image_tag("Slide1.jpg", class: "d-block w-100", alt: "Slide 1") %>
           <div class="carousel-caption">
             <h2>The Garrison</h2>
-            <p>This Slide will contain a brief Description of our venture.</p>
+            <h3><i>"Unyielding Strength, Unmatched Innovation."</i></h3>
+            <p>An indigeneous and Private organisation based in India & for India. Committed to safeguard the nation against current as well as emerging threats with deadly force & minimal effort. A new yet bold entry into the Military Industrial Complex of India.</p>
           </div>
         </div>
         <div class="carousel-item">
          <%= image_tag("Slide2.jpg", class: "d-block w-100", alt: "Slide 2") %>
           <div class="carousel-caption">
             <h2>Public Safety</h2>
-            <p>This Slide will explain how we will work to improve public safety.</p>
+            <p>We as security company enhances public safety by working closely with individuals and communities. By offering a range of effective tools, this focus on accessible self-defense solutions helps foster a safer environment, enabling individuals to feel more secure in their daily lives.</p>
+            
+            
           </div>
         </div>
         <div class="carousel-item">
           <%= image_tag("Slide3.jpg", class: "d-block w-100", alt: "Slide 3") %>
           <div class="carousel-caption">
             <h2>Military Aspect</h2>
-            <p>How we plan to expand into the defense sector</p>
+            <p>In addition to our focus on personal safety, we also specialize in military technology, developing advanced tactical gear, surveillance systems, and communication devices for defense organizations. By leveraging cutting-edge innovations and collaborating with military experts, we aim to meet the specific needs of military personnel, enhancing their operational effectiveness and safety in the field.</p>
           </div>
         </div>
       </div>

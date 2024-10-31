@@ -1,1 +1,101 @@
-All Products Will be here....
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            width: 100%;
+            position: fixed;
+            left: 0;
+            right: 0;
+            z-index: 10;
+        }   
+
+        .header {
+            top: 0;
+            height: 60px;
+            background-color: #333;
+        }
+
+        .footer {
+            bottom: 0;
+            height: 60px;
+            background-color: #333;
+        }
+
+        .main-container {
+            padding-top: 80px; /* Offset for the fixed header */
+            padding-bottom: 80px; /* Offset for the fixed footer */
+            display: flex;
+            justify-content: center;
+        }
+
+        .product-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            width: calc(50% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+
+        .product:hover {
+            transform: translateY(-5px); /* Move the product card up slightly */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+    </style>
+
+<h1><u>Our Products*</u></h1>
+<h2>Our wide range of products</h2>
+<div class="product-container">
+    <div class="product">
+        <h2><u>Electrical keychain</u></h2>
+        <p>A compact keychain which can detain the attackers.</p>
+        <p><strong>Price:</strong> ₹999</p>
+    </div>
+    <div class="product">
+        <h2><u>Advance surveillance cctv</u></h2>
+        <p>An advance cctv which detects the attackers moves and even saves the attackers pictures and alerts the owner.</p>
+        <p><strong>Price:</strong> ₹4,999</p>
+    </div>
+    <div class="product">
+        <h2><u>Spy Drone</u></h2>
+        <p>A strong drone which can withstand any temperature and weather and captures the moves of suspects.</p>
+        <p><strong>Price:</strong> For Military Professionals Only.</p>
+    </div>
+    <div class="product">
+        <h2><u>Night vision Goggles</u></h2>
+        <p>A handy night vision technology goggles which have the best battery backup and is easy to use for soldiers.</p>
+        <p><strong>Price:</strong> For Military Professionals Only.</p>
+    </div>
+    <p>*The above products are for representation purposes only.</p>
+</div>
+
+</body>
+</html>

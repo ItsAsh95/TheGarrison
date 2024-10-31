@@ -1,19 +1,64 @@
-<div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+<style>
+  /* Enhanced caption styling for About Us page */
+.about-caption {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 60%;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+  }
+  
+  .about-caption h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .about-caption p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 0;
+  }
+  
+  /* Custom transition for about page carousel */
+  .carousel-item {
+    transition: transform 1.2s ease-in-out;
+  }
+  
+  /* Optional: Add a gradient overlay to images */
+  .carousel-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3));
+  }
+  
+  </style>
+<div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
   <div class="carousel-inner">
 
     <!-- Slide 1: Mission -->
     <div class="carousel-item active" style="background-image: url('<%= asset_path 'Mission.jpg' %>'); background-size: cover; background-position: center;">
       <div class="d-flex flex-column align-items-center justify-content-center text-white p-5" style="height: 500px;">
-        <h2>Our Mission</h2>
-        <p>Your mission statement here.</p>
+        <h2 style="color: black; font-size: 3rem;"><u>Our Mission</u></h2>
+        <p style="color: black; font-size: 1.5rem;">Our Mission is to empower not just entire militaries but every single individual as well by offering unparalleled innovation with unmatched capabilities. We are dedicated to safeguard you and your families. We are here to do the heavy lifting for you. Ready to put ourselves on the frontlines. We aim to combat existing & emerging threats with deadly force and extreme precision combined with minimal effort. Through our dual focus on personal safety and military technology, we aim to foster a culture of preparedness and resilience in both civilian and defense communities.</p>
       </div>
     </div>
 
     <!-- Slide 2: Vision -->
     <div class="carousel-item" style="background-image: url('<%= asset_path 'Vision.jpg' %>'); background-size: cover; background-position: center;">
       <div class="d-flex flex-column align-items-center justify-content-center text-white p-5" style="height: 500px;">
-        <h2>Our Vision</h2>
-        <p>Your vision statement here.</p>
+        <h2 style="color: black; font-size: 3rem;"><u>Our Vision</u></h2>
+        <p style="color: black; font-size: 1.5rem;">We envision a future where security is seamlessly integrated into everyday life, driven by relentless innovation and unwavering strength. The Garrison aims to be the global leader in protective technology, creating an interconnected world where every person can thrive in safety, free from fear and uncertainty, paving the way for a brighter tomorrow.</p>
       </div>
     </div>
 
@@ -27,8 +72,9 @@
             <div class="image-container">
               <img src="<%= asset_path 'My Photo.jpg' %>" alt="CEO" class="team-img">
             </div>
-            <h4 class="mt-3">CEO</h4>
-            <p>Leadership and vision for our company's future.</p>
+            <h4 style="color: black;" class="mt-3">CEO</h4>
+            <h4 style="color: black;" class="mt-3"><u>Ashmit Ayan</u></h4>
+            <p style="color: black;">Leadership and vision for our company's future.</p>
           </div>
 
           <!-- CTO Section -->
@@ -36,8 +82,9 @@
             <div class="image-container">
               <img src="<%= asset_path 'Deb.jpg' %>" alt="CTO" class="team-img">
             </div>
-            <h4 class="mt-3">CTO</h4>
-            <p>Driving innovation and technical excellence.</p>
+            <h4 style="color: black;" class="mt-3">CTO</h4>
+            <h4 style="color: black;" class="mt-3"><u>Debayush Dutta Choudhuri</u></h4>
+            <p style="color: black;">Driving innovation and technical excellence.</p>
           </div>
 
           <!-- CFO Section -->
@@ -45,8 +92,9 @@
             <div class="image-container">
               <img src="<%= asset_path 'Asr.jpg' %>" alt="CFO" class="team-img">
             </div>
-            <h4 class="mt-3">CFO</h4>
-            <p>Managing financial strategy and growth.</p>
+            <h4 style="color: black;" class="mt-3">CFO</h4>
+            <h4 style="color: black;" class="mt-3"><u>Vavilala Asrith</u></h4>
+            <p style="color: black;">Managing financial strategy and growth.</p>
           </div>
           
         </div>
