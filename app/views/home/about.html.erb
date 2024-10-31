@@ -1,53 +1,67 @@
-<!-- app/views/about/index.html.erb -->
-<main class="main-content">
-  <div class="carousel-container">
-    <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
-      <!-- Carousel indicators -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Mission"></button>
-        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Vision"></button>
-        <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Team"></button>
+<div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1: Mission -->
+    <div class="carousel-item active" style="background-image: url('<%= asset_path 'Mission.jpg' %>'); background-size: cover; background-position: center;">
+      <div class="d-flex flex-column align-items-center justify-content-center text-white p-5" style="height: 500px;">
+        <h2>Our Mission</h2>
+        <p>Your mission statement here.</p>
       </div>
-
-      <!-- Carousel items -->
-      <div class="carousel-inner">
-        <!-- Mission Slide -->
-        <div class="carousel-item active">
-          <%= image_tag("Mission.jpg", class: "d-block w-100", alt: "Mission") %>
-            <div class="carousel-caption about-caption">
-            <h2>Our Mission</h2>
-            <p>At The Garrison, we are committed to excellence in [your mission statement here].</p>
-          </div>
-        </div>
-
-        <!-- Vision Slide -->
-        <div class="carousel-item">
-          <%= image_tag("Vision.jpg", class: "d-block w-100", alt: "Vision") %>
-          <div class="carousel-caption about-caption">
-            <h2>Our Vision</h2>
-            <p>We envision a future where [your vision statement here].</p>
-          </div>
-        </div>
-
-        <!-- Team Slide -->
-        <div class="carousel-item">
-          <%= image_tag("Names.jpg", class: "d-block w-100", alt: "Team") %>
-          <div class="carousel-caption about-caption">
-            <h2>Our Team</h2>
-            <p>Meet the dedicated professionals behind The Garrison.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Carousel controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+
+    <!-- Slide 2: Vision -->
+    <div class="carousel-item" style="background-image: url('<%= asset_path 'Vision.jpg' %>'); background-size: cover; background-position: center;">
+      <div class="d-flex flex-column align-items-center justify-content-center text-white p-5" style="height: 500px;">
+        <h2>Our Vision</h2>
+        <p>Your vision statement here.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3: Team Members -->
+    <div class="carousel-item" style="background-image: url('<%= asset_path 'Names.jpg' %>'); background-size: cover; background-position: center;">
+      <div class="d-flex justify-content-center align-items-center text-white p-5" style="height: 500px;">
+        <div class="d-flex gap-4">
+          
+          <!-- CEO Section -->
+          <div class="d-flex flex-column align-items-center text-center team-member">
+            <div class="image-container">
+              <img src="<%= asset_path 'My Photo.jpg' %>" alt="CEO" class="team-img">
+            </div>
+            <h4 class="mt-3">CEO</h4>
+            <p>Leadership and vision for our company's future.</p>
+          </div>
+
+          <!-- CTO Section -->
+          <div class="d-flex flex-column align-items-center text-center team-member">
+            <div class="image-container">
+              <img src="<%= asset_path 'Deb.jpg' %>" alt="CTO" class="team-img">
+            </div>
+            <h4 class="mt-3">CTO</h4>
+            <p>Driving innovation and technical excellence.</p>
+          </div>
+
+          <!-- CFO Section -->
+          <div class="d-flex flex-column align-items-center text-center team-member">
+            <div class="image-container">
+              <img src="<%= asset_path 'Asr.jpg' %>" alt="CFO" class="team-img">
+            </div>
+            <h4 class="mt-3">CFO</h4>
+            <p>Managing financial strategy and growth.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
   </div>
-</main>
+
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
