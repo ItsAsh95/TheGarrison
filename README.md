@@ -1,3 +1,7 @@
+The following repo contains code for a basic webpage.
+Readme file edited for the sake of practice.
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
