@@ -1,0 +1,12 @@
+# This goes in .github/CODEOWNERS
+
+# These owners will be the default owners for everything in
+# the repo. They will be requested for review when someone 
+# opens a pull request.
+*       @ItsAsh95
+
+# You can also specify owners for specific files/directories
+# Examples:
+# /docs/   @ItsAsh95
+# *.js     @ItsAsh95
+# *.go     @ItsAsh95
