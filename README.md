@@ -12,7 +12,7 @@ Thank you and have an excellent day!! - ItsAsh95
 * Node - 23.1.0
 * Yarn - 4.5.0
 * Bootstrap - 5.3.3
-* React uninitialized but compatible with the webpage.
+* React - uninitialized but compatible with the webpage.
 
 # Other Stuff
 * System dependencies - Basic Website, will run on most systems if not all.
