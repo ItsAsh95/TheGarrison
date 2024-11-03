@@ -1,28 +1,26 @@
-The following repo contains code for a basic webpage.
-Readme file edited for the sake of practice.
-
+This repository contains code for a basic yet functional webpage.
 
 # README
+Contains the necessary information regarding this repository, and how you can run it on your system. 
+Commits are disabled atm, if you want to contribute you may suggest changes and sign off. 
+Suggestions are welcome and will be reviewed before being instated.
+Thank you and have an excellent day!! - ItsAsh95
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Packages Used:
+* Ruby version - 3.3.5
+* Rails - 7.2.1.2
+* Node - 23.1.0
+* Yarn - 4.5.0
+* Bootstrap - 5.3.3
+* React uninitialized but compatible with the webpage.
 
-Things you may want to cover:
+# Other Stuff
+* System dependencies - Basic Website, will run on most systems if not all.
 
-* Ruby version
+* Configuration - Requires the user to have the ruby on rails framework up and working.
 
-* System dependencies
+* How to run the test suite - "Rails S" command should be run in the root file directory.
 
-* Configuration
+* Services (job queues, cache servers, search engines, etc.) - None atm.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* END
